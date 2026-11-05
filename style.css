@@ -371,11 +371,16 @@ section {
   letter-spacing: 0.03em;
 }
 
-.project-body a {
+.project-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.project-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   padding: 12px 14px;
   border-radius: 12px;
   border: 1px solid rgba(109, 94, 252, 0.15);
@@ -385,8 +390,8 @@ section {
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-.project-body a:hover,
-.project-body a:focus-visible {
+.project-links a:hover,
+.project-links a:focus-visible {
   background: var(--primary);
   color: #fff;
 }
